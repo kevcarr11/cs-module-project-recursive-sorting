@@ -1,13 +1,13 @@
 # TO-DO: Implement a recursive implementation of binary search
 def binary_search(arr, target, start, end):
-    # first base case
+    # base case
     if end < start:
         return -1
 
     mid_index = (start + end) // 2
 
-    # second base case
-    if arr[mid_index] == target:
+    # base case
+    if target == arr[mid_index] :
         return mid_index
         # decrement end value and recurse 
     elif target < arr[mid_index]:
@@ -24,5 +24,5 @@ def binary_search(arr, target, start, end):
 # You can implement this function either recursively 
 # or iteratively
 def agnostic_binary_search(arr, target):
-    # Your code here
+    pass
 
